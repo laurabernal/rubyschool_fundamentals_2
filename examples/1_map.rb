@@ -8,14 +8,17 @@ porcentajes = [0.1, 0.21, 0.23, 0.94]
 
 # metodo map aqui - una linea!!!
 
-puts uso_map
+porcentajes = porcentajes.map{|p| p*100}
+
 # Resultado esperado:
+porcentajes.each {|p| puts p.to_i}
 # 10
 # 21
 # 23
 # 94
 
 # Si le quieres aumentar un poco la complejidad, trata de llegar a:
+porcentajes.each {|p| puts "#{p.to_i}%"}
 # 10%
 # 21%
 # 23%
